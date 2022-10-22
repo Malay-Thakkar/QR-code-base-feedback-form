@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "6340eda6968393151f2c21d1"
+  },
+  "state": "Gujarat",
+  "dict": "Mehsana",
+  "city": "Vadnagar",
+  "taluka": "Vadnagar",
+  "q1": "With a neighbour/local leader",
+  "q2": "15-min",
+  "q3": "great"
+},{
+  "_id": {
+    "$oid": "6340edb8968393151f2c21d3"
+  },
+  "state": "Gujarat",
+  "dict": "Mehsana",
+  "city": "Vadnagar",
+  "taluka": "Vadnagar",
+  "q1": "With a neighbour/local leader",
+  "q2": "15-min+",
+  "q3": "good"
+},{
+  "_id": {
+    "$oid": "6340ede1968393151f2c21d5"
+  },
+  "state": "Gujarat",
+  "dict": "Mehsana",
+  "city": "Vadnagar",
+  "taluka": "Vadnagar",
+  "q1": "Through a person know to a police officer",
+  "q2": "15-min+",
+  "q3": "bed"
+},{
+  "_id": {
+    "$oid": "6340ee02968393151f2c21d7"
+  },
+  "state": "Gujarat",
+  "dict": "Mehsana",
+  "city": "visnagar",
+  "taluka": "visnagar",
+  "q1": "Through a person know to a police officer",
+  "q2": "15-min+",
+  "q3": "great"
+},{
+  "_id": {
+    "$oid": "6340ee20968393151f2c21d9"
+  },
+  "state": "Gujarat",
+  "dict": "Mehsana",
+  "city": "mehsana",
+  "taluka": "mehsana",
+  "q1": "With a neighbour/local leader",
+  "q2": "5-min",
+  "q3": "great"
+},{
+  "_id": {
+    "$oid": "6340ee69968393151f2c21db"
+  },
+  "state": "Gujarat",
+  "dict": "Mehsana",
+  "city": "unja",
+  "taluka": "unja",
+  "q1": "With a neighbour/local leader",
+  "q2": "15-min",
+  "q3": "great"
+},{
+  "_id": {
+    "$oid": "6340ee96968393151f2c21dd"
+  },
+  "state": "Gujarat",
+  "dict": "junagadh",
+  "city": "manavadar",
+  "taluka": "manavadar",
+  "q1": "Through a person know to a police officer",
+  "q2": "5-min",
+  "q3": "good"
+},{
+  "_id": {
+    "$oid": "6340eeb3968393151f2c21df"
+  },
+  "state": "Gujarat",
+  "dict": "ahemedabad",
+  "city": "naroda",
+  "taluka": "naroda",
+  "q1": "With a neighbour/local leader",
+  "q2": "15-min+",
+  "q3": "bed"
+},{
+  "_id": {
+    "$oid": "6340ef30968393151f2c21e1"
+  },
+  "state": "Gujarat",
+  "dict": "gandhinagar",
+  "city": "gandhinagar",
+  "taluka": "gandhinagar",
+  "q1": "Through a person know to a police officer",
+  "q2": "5-min",
+  "q3": "awsome "
+}]
