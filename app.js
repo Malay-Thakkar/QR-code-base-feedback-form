@@ -16,10 +16,13 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
-mongoose.connect('mongodb://localhost:27017/adminsignup', {
+const con = "mongodb+srv://mohansharma9221:yxXWiNVTwfHyzjzh@cluster0.ey0nymu.mongodb.net/feedback?retryWrites=true&w=majority";
+const conparams = {
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+};
+
+mongoose.connect(con, conparams)
 
 var db = mongoose.connection;
 
