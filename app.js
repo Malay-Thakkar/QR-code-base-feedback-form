@@ -1,10 +1,13 @@
 var express = require("express")
-const path = require('path');
 var bodyParser = require("body-parser")
-var mongoose = require("mongoose")
+const { check, validationResult } = require('express-validator');
+const path = require('path');
+var mongoose = require("mongoose");
+const { error } = require("console");
 
 
 const app = express()
+app.use(express.json());
 var publicpath = path.join(__dirname, 'public')
 
 app.use(bodyParser.json())
@@ -32,7 +35,6 @@ app.post("/sign_up", (req, res) => {
         "email": email,
         "password": password
     }
-
     db.collection('users').insertOne(data, (err, collection) => {
         if (err) {
             throw err;
@@ -65,7 +67,7 @@ app.post("/feedback", (req, res) => {
         "q3": q3
     }
 
-    db.collection('users').insertOne(data, (err, collection) => {
+    db.collection('feedback').insertOne(data, (err, collection) => {
         if (err) {
             throw err;
         }
@@ -88,12 +90,10 @@ app.post('/adminLogin', (req, res) => {
         if (err) {
             //throw err;
             console.log('error');
-        }
+            return res.redirect('/error')
+        } else if ((result[0].password === req.body.password) && (result[0].email === req.body.email)) {
 
-
-        if ((result[0].password === req.body.password) && (result[0].email === req.body.email)) {
-
-            return res.redirect('qrgen')
+            return res.redirect('/qrgen')
         } else {
             return res.redirect('/error')
         }

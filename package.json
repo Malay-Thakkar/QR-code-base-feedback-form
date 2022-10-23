@@ -1,0 +1,31 @@
+{
+    "name": "qr-code-base-feedback-form",
+    "version": "1.0.0",
+    "description": "it will provide citizen to just scan QR code and give feedback anonymously that will help to improve the police behavior.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Malay-Thakkar/QR-code-base-feedback-form.git"
+    },
+    "keywords": [
+        "Node.js",
+        "express",
+        "mongodb"
+    ],
+    "author": "Malay Thakkar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Malay-Thakkar/QR-code-base-feedback-form/issues"
+    },
+    "homepage": "https://github.com/Malay-Thakkar/QR-code-base-feedback-form#readme",
+    "dependencies": {
+        "body-parser": "^1.20.1",
+        "express": "^4.18.2",
+        "express-validator": "^6.14.2",
+        "mongodb": "^4.11.0",
+        "path": "^0.12.7"
+    }
+}

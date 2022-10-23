@@ -17,7 +17,7 @@
 
         <div class="card">
             <div class="card-header">
-                <form action="/adminLogin" method="post">
+                <form action="/adminLogin" method="post" name="myform">
                     <h2 class="" style="text-align: center; font-size: 50px; font-family: syne;   color: #ffffff;">
                         LOGIN
                     </h2>
@@ -29,6 +29,20 @@
                     <button type="submit" style="border: 2px solid rgb(255, 255, 255); background-color: #ffffff;color: #000000;width: 100px;  " class="button ml-5">Login</button>
                     <!-- <h6 class="pt-3">Forgot password?<a href="forgetpass.html" style="color:bisque;">Click here</a></h6> -->
                 </form>
+                <!-- <script>
+                    function validateForm() {
+                        let x = document.forms["myForm"]["email"].value;
+                        let y = document.forms["myForm"]["password"].value;
+                        if (x == "") {
+                            alert("Email must be filled out");
+                            return false;
+                        }
+                        if (y == "") {
+                            alert("you have to Enter Password");
+                            return false;
+                        }
+                    }
+                </script> -->
             </div>
 
         </div>
