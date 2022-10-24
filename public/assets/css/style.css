@@ -7,6 +7,16 @@ form {
     margin: auto;
 }
 
+.combobox {
+    border-radius: 25px;
+    width: 20%;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(148, 148, 148);
+    padding: 20px;
+    text-align: center;
+}
+
 input[type=text],
 [type=email],
 textarea {
