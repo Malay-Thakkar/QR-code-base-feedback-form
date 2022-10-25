@@ -63,38 +63,46 @@
                 <h1 class="form-title pt-5 " style="text-align:center ; font-family:Arial, Helvetica, sans-serif;"> New feedback form</h1>
                 <div class="container">
                     <form action="/feedback" method="post">
-                        <input type="text" class="mr-5" placeholder="City/Station" id="ip2" name="city" />
-                        <input type="text" class="ml-5  " placeholder="Taluka" id="ip2" name="taluka" /><br>
-                        <input type="text" class="mr-5" placeholder="District " id="ip2" name="dict" />
-                        <input type="text" class="ml-5 " placeholder="State" id="ip2" name="state" />
+                        <!-- <pre>
+                            dict    : <input type="text" name="dict"
+                                        value='<%=feedback.dict%>'> <br>
+                  
+                            city    : <input type="text" name="city"
+                                        value='<%=user.city%>'> <br>  
+                            <input type="submit" value="Submit Form"> 
+                        </pre> -->
+                        <input type="text" class="mr-5" placeholder="District " id="ip2" name="dict" required/>
+                        <input type="text" class="mr-5" placeholder="City/Station" id="ip2" name="city" required />
+                        <!-- <input type="text" class="ml-5  " placeholder="Taluka" id="ip2" name="taluka" /><br> -->
+                        <!-- <input type="text" class="ml-5 " placeholder="State" id="ip2" name="state" /> -->
                         <h2 class="pt-5 pb-2">How did you come to the police station?</h2>
-                        <input type="radio" id="radio-1" name="que1" value="Through a person know to a police officer">
+                        <input type="radio" id="radio-1" name="que1" required value="Through a person know to a police officer">
                         <label for="html">Through a person know to a police officer</label><br>
-                        <input class="ml-5" type="radio" id="radio-2" name="que1" value="With a neighbour/local leader">
+                        <input class="ml-5" type="radio" id="radio-2" name="que1" required value="With a neighbour/local leader">
                         <label for="html">With a neighbour/local leader</label><br>
-                        <input class="ml-5" type="radio" id="radio-3" name="que1" value="With a neighbour/local leader">
+                        <input class="ml-5" type="radio" id="radio-3" name="que1" required value="With a neighbour/local leader">
                         <label for="html">On your own</label><br>
 
                         <h2 class="pt-4 pb-2">After how much time you were hearn in PS?</h2>
-                        <input class="ml-5" type="radio" id="radio-4" name="que2" value="15-min+">
+                        <input class="ml-5" type="radio" id="radio-4" required name="que2" value="15-min+">
                         <label for="html">More than 15 minutes</label><br>
-                        <input class="ml-5" type="radio" id="radio-5" name="que2" value="15-min">
+                        <input class="ml-5" type="radio" id="radio-5" required name="que2" value="15-min">
                         <label for="html">15 minutes</label><br>
-                        <input class="ml-5" type="radio" id="radio-6" name="que2" value="10-min">
+                        <input class="ml-5" type="radio" id="radio-6" required name="que2" value="10-min">
                         <label for="html">10 minutes</label><br>
-                        <input class="ml-5" type="radio" id="radio-7" name="que2" value="5-min">
+                        <input class="ml-5" type="radio" id="radio-7" required name="que2" value="5-min">
                         <label for="html">5 minutes</label><br>
 
                         <h2 class="pt-4 pb-2">what would you describe your experience with police officers in the police station?</h2>
-                        <input class="ml-5" type="radio" id="radio-8" name="que3" value="rate-1">
+                        <input class="ml-5" type="radio" id="radio-8" name="que3" required value="rate-1">
                         <label for="html">1-So Bad</label>
-                        <input class="ml-5" type="radio" id="radio-9" name="que3" value="rate-2">
+                        <input class="ml-5" type="radio" id="radio-9" name="que3" required value="rate-2">
                         <label for="html">2-Bad</label>
-                        <input class="ml-5" type="radio" id="radio-10" name="que3" value="rate-3">
+                        <input class="ml-5" type="radio" id="radio-10" name="que3" required value="rate-3">
                         <label for="html">3-okey</label>
-                        <input class="ml-5" type="radio" id="radio-11" name="que3" value="rate-4">
+                        <input class="ml-5" type="radio" id="radio-11" name="que3" required value="rate-4">
                         <label for="html">4-Good</label>
-                        <input class="ml-5" type="radio" id="radio-12" name="que3" value="rate-5">
+                        <input class="ml-5" type="radio" id="radio-12" name="que3" required value="rate-5">
                         <label for="html">5-Great</label><br>
 
                         <input style=" color: #ffffff;background-color: rgba(0, 36, 95, 0.679);height: 40px;width: 25%;margin-top: 15px;cursor: pointer;border: none;border-radius:25px;outline: none;text-align: center;font-size: 16px;text-decoration: none;-webkit-transition-duration: 0.4s;

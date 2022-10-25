@@ -13,7 +13,7 @@ const onGenerateSubmit = (e) => {
     const size = document.getElementById('size').value;
     const dist = document.getElementById('Dist').value;
     const city = document.getElementById('City').value;
-    var queryurl = `http://localhost:3000/feedbackpage?dist=${dist}&city=${city}`;
+    var queryurl = `http://192.168.0.102:3000/feedbackpage?dist=${dist}&city=${city}`;
     console.log(queryurl);
 
     // Validate url

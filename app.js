@@ -1,5 +1,6 @@
 var express = require("express")
 var bodyParser = require("body-parser")
+const url = require("url");
 const { check, validationResult } = require('express-validator');
 const path = require('path');
 var mongoose = require("mongoose");
@@ -31,40 +32,46 @@ db.once('open', () => console.log("Connected to Database"))
 
 app.post("/sign_up", (req, res) => {
 
-    var email = req.body.email;
-    var password = req.body.password;
+        var email = req.body.email;
+        var password = req.body.password;
 
-    var data = {
-        "email": email,
-        "password": password
-    }
-    db.collection('users').insertOne(data, (err, collection) => {
-        if (err) {
-            throw err;
+        var data = {
+            "email": email,
+            "password": password
         }
-        console.log("Record Inserted Successfully");
-    });
+        db.collection('users').insertOne(data, (err, collection) => {
+            if (err) {
+                throw err;
+            }
+            console.log("Record Inserted Successfully");
+        });
 
-    return res.redirect('/signupsuccessfully')
+        return res.redirect('/signupsuccessfully')
 
-})
+    })
+    // made for pre field form
+    //app.get("/feedback", (req, res) => {
+    //     let url = url.parse(req, true);
+    //     var dict = url.query.dict;
+    //     var city = url.query.city
+    //     res.send(`your dist=${dict} and city =${city}`);
+    //     console.log(`your dist=${dict} and city =${city}`);
 
-
+// })
 app.post("/feedback", (req, res) => {
-
-    var state = req.body.state;
+    // var state = req.body.state;
     var dict = req.body.dict;
     var city = req.body.city;
-    var taluka = req.body.taluka;
+    // var taluka = req.body.taluka;
     var q1 = req.body.que1;
     var q2 = req.body.que2;
     var q3 = req.body.que3;
 
     var data = {
-        "state": state,
+        // "state": state,
         "dict": dict,
         "city": city,
-        "taluka": taluka,
+        // "taluka": taluka,
         "q1": q1,
         "q2": q2,
         "q3": q3
