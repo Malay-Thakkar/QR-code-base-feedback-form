@@ -50,14 +50,14 @@ app.post("/sign_up", (req, res) => {
 
     })
     // made for pre field form
-    //app.get("/feedback", (req, res) => {
-    //     let url = url.parse(req, true);
-    //     var dict = url.query.dict;
-    //     var city = url.query.city
-    //     res.send(`your dist=${dict} and city =${city}`);
-    //     console.log(`your dist=${dict} and city =${city}`);
-
-// })
+app.get("/feedback/:disto", (req, res, next) => {
+    let url = url.parse(req, true);
+    var dict = url.query.dict;
+    var city = url.query.city
+    res.send("yyour id" + dicto);
+    // console.log(`your dist=${dict} and city =${city}`);
+    next();
+})
 app.post("/feedback", (req, res) => {
     // var state = req.body.state;
     var dict = req.body.dict;

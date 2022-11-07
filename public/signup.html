@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
 
     <link rel="stylesheet" href="./assets/css/login_admin.css">
-    <title>Signup admin</title>
+    <title>QR code Base feedback form</title>
 </head>
 
 <body id="grad1">
@@ -17,20 +17,21 @@
 
         <div class="card">
             <div class="card-header">
-                <h2 class="" style="text-align: center; font-size: 50px; font-family: syne;   color: #ffffff;">
-                    SIGNUP
-                </h2>
-                <h4 style="text-align: center; color: #ffffff;">
-                    FOR ADMIN
-                </h4>
                 <form action="/sign_up" method="POST">
-                    <h2>SignUp Form</h2>
+                    <h2 style="text-align: center; font-size: 50px; font-family: syne;   color: #ffffff;">
+                        SIGNUP
+                    </h2>
+                    <input type="text" placeholder="E-mail" id="email" required name="email" /><br>
+                    <input class="mb-2" type="password" id="password" name="password" placeholder="Password" required/><br>
+                    <button type="submit" style="border: 2px solid rgb(255, 255, 255); background-color: #ffffff;color: #000000;width: 100px;  " class="button ml-5">Submit</button>
+                    <!-- <h2>SignUp Form</h2>
                     <input type="text" class="box" id="email" name="email" placeholder="Email" required />
                     <br>
                     <input type="text" class="box" id="password" name="password" placeholder="Password" required />
                     <br>
-                    <input type="submit" value="Submit" id="submit" />
+                    <input type="submit" value="Submit" id="submit" /> -->
                 </form>
+
             </div>
 
         </div>
